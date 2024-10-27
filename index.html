@@ -55,11 +55,51 @@
             color: #777;
             margin-top: 20px;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            color: #333;
+        }
+        input:focus, textarea:focus {
+            border-color: #007acc;
+            outline: none;
+        }
+        textarea {
+            font-family: 'Courier New', Courier, monospace; /* Change the font */
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+        .profile-image {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%; /* Makes the image circular */
+            width: 150px; /* Set the width of the image */
+            height: 150px; /* Set the height of the image */
+            object-fit: cover; /* Ensures the image fits well */
+        }
     </style>
 </head>
 <body>
-     <img src="https://github.com/Percy00765432/htmlres/blob/main/picjpg.jpg?raw=true" " alt="Description of the image">
-     <div class="container">
+    <img src="https://github.com/Percy00765432/htmlres/blob/main/10533.jpg?raw=true" alt="My picture" class="profile-image">
+    <div class="container">
         <h1>Prathik K B</h1>
         <p style="text-align:center; color: #555;">First-Year Engineering Student at RVU</p>
         
@@ -85,24 +125,27 @@
                 <div>🔹 Football</div>
             </div>
         </div>
+        
         <div class="section">
-            <h2>Contact Me</h2>
-            <form class="contact-form" action="mailto:prathikkb68@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email ID:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Your Message to the Venkat:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-
-                <button type="submit">Submit</button>
+            <h2 class="section-title">Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
             </form>
         </div>
 
-        
-                <div class="footer">
+        <div class="footer">
             <p>Connect with me on <a href="https://github.com/Percy00765432" target="_blank" style="color: #007acc; text-decoration: none;">GitHub</a>!</p>
         </div>
     </div>
