@@ -95,10 +95,17 @@
             height: 150px; 
             object-fit: cover; 
         }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <img src="https://github.com/Percy00765432/htmlres/blob/main/10533.jpg?raw=true" alt="My picture" class="profile-image">
+    <img src="https://github.com/Percy00765432/htmlres/blob/main/10533.jpg?raw=true" alt="Profile picture of Prathik K B" class="profile-image">
     <div class="container">
         <h1>Prathik K B</h1>
         <p style="text-align:center; color: #555;">First-Year Engineering Student at RVU</p>
@@ -113,6 +120,8 @@
             <div class="info">
                 <div><strong>University:</strong> RVU</div>
                 <div><strong>Year:</strong> First Year</div>
+                <div><strong>Class 12 Percentage(KSEAB):</strong> 85%</div> <!-- Update with your actual percentage -->
+                <div><strong>Class 10 Percentage(ICSE):</strong> 90%</div> <!-- Update with your actual percentage -->
             </div>
         </div>
         
@@ -131,22 +140,25 @@
             <form action="mailto:prathikkb68@gmail.com" method="POST" enctype="text/plain">
                 <div>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div>
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit">Send Message</button>
             </form>
         </div>
 
         <div class="footer">
-            <p>Connect with me on <a href="https://github.com/Percy00765432" target="_blank" style="color: #007acc; text-decoration: none;">GitHub</a>!</p>
+            <p>Connect with me on 
+                <a href="https://github.com/Percy00765432" target="_blank">GitHub</a> or 
+                <a href="mailto:prathikkb68@gmail.com">Email</a>!
+            </p>
         </div>
     </div>
 </body>
