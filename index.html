@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathik's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #007acc;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #007acc;
+            margin-bottom: 8px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.2em;
+            color: #333;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .info, .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .info div, .skills div {
+            flex: 1;
+            min-width: 100px;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            color: #333;
+        }
+        input:focus, textarea:focus {
+            border-color: #007acc;
+            outline: none;
+        }
+        textarea {
+            font-family: Arial, sans-serif; 
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+        .profile-image {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%; 
+            width: 150px; 
+            height: 150px; 
+            object-fit: cover; 
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://github.com/Percy00765432/htmlres/blob/main/10533.jpg?raw=true" alt="Profile picture of Prathik K B" class="profile-image">
+    <div class="container">
+        <h1>Prathik K B</h1>
+        <p style="text-align:center; color: #555;">First-Year Engineering Student at RVU</p>
+        
+        <div class="section">
+            <h2 class="section-title">Personal Details</h2>
+            <p>Phone: +919632095103</p>
+            <p>Email: <a href="mailto:prathikkb68@gmail.com">prathikkb68@gmail.com</a></p>
+        </div>
 
+        <div class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm an enthusiastic first-year engineering student passionate about technology and coding. I love playing football and am eager to learn programming languages and tools like C, HTML, Git, and GitHub to build my coding skills.</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Class</th>
+                        <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Percentage</th>
+                        <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Year</th>
+                        <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Current Education</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;">Class 12</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">85%</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">2023</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">N/A</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;">Class 10</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">90%</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">2021</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">N/A</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;">B.Tech</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">N/A</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">2024-Present</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">RVU, First Year</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills">
+                <div>🔹 C Language (Learning)</div>
+                <div>🔹 HTML (Learning)</div>
+                <div>🔹 Git & GitHub (Learning)</div>
+                <div>🔹 Football</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="mailto:prathikkb68@gmail.com" method="POST" enctype="text/plain">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="footer">
+            <p>Connect with me on 
+                <a href="https://github.com/Percy00765432" target="_blank">GitHub</a> or 
+                <a href="mailto:prathikkb68@gmail.com">Email</a>!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
